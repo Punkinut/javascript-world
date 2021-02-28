@@ -19,12 +19,14 @@
     height: 100%;
 }
 
+/* Styling the main header of the page */
 .titleSeq h2 {
     font-family: 'Rubik Mono One', sans-serif;
     letter-spacing: 3px;
     font-size: 30px;
 }
 
+/* Styling the sub title of the page */
 .titleSeq p {
     font-family: 'Rubik', sans-serif;
     padding: 15px;
@@ -41,7 +43,6 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
-    justify-content: space-between;
 }
 
 /* To stylize the grid boxes inside the grid */
@@ -59,19 +60,20 @@
     margin: auto;
     padding-left: 10%;
     padding-right: 10%;
+    font-family: 'Rubik', sans-serif;
 }
 
-.gridBoxes h5 {
-    font-family: 'Rubik', sans-serif;
+/* The padding to the text elements */
+.gridBoxes h5,
+p {
     padding: 8px 0px;
 }
 
+/* Styling the paragraph elements inside the grid boxes */
 .gridBoxes p {
-    font-family: 'Rubik', sans-serif;
     font-size: 14px; 
     opacity: 50%;
     line-height: 20px;
-    padding: 8px 0px;
 }
 
 
