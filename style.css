@@ -1,0 +1,28 @@
+/* Just to set some basics for the overall page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic six grid layout */
+.gridBoxes {
+    display: grid;
+    grid-template: repeat(2, 300px) / repeat(3, 300px);
+    row-gap: 20px;
+    column-gap: 20px;
+    border: 1px solid black;
+    justify-content: center;
+}
+
+/* To stylize the grid boxes inside the grid */
+.gridBoxes article {
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+/* The content inside the grid boxes */
+.gridBoxes aside {
+    border: 1px solid black;
+}
+
