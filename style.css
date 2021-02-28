@@ -7,7 +7,16 @@
 
 /* Main element for for the title sequence */
 .titleSeq {
+    height: 200px;
+}
+
+/* The container that holds the text inside the title sequence */
+.titleSeq article {
+    text-align: center;
+    width: 300px;
+    margin: auto;
     border: 1px solid black;
+    height: 100%;
 }
 
 /* Basic six grid layout */
@@ -18,18 +27,24 @@
     column-gap: 20px;
     border: 1px solid black;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 50px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* To stylize the grid boxes inside the grid */
 .gridBoxes article {
     border: 1px solid black;
     border-radius: 30px;
+    display: flex;
 }
 
 /* The content inside the grid boxes */
 .gridBoxes aside {
-    border: 1px solid black;
+    width: 85%;
+    margin: auto;
+    text-align: center;
 }
 
