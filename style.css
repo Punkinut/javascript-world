@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+/* Main element for for the title sequence */
+.titleSeq {
+    border: 1px solid black;
+}
+
 /* Basic six grid layout */
 .gridBoxes {
     display: grid;
@@ -13,12 +18,14 @@
     column-gap: 20px;
     border: 1px solid black;
     justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 /* To stylize the grid boxes inside the grid */
 .gridBoxes article {
     border: 1px solid black;
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 /* The content inside the grid boxes */
