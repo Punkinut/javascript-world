@@ -13,25 +13,24 @@
 /* The container that holds the text inside the title sequence */
 .titleSeq article {
     text-align: center;
-    width: 300px;
+    padding: 70px 0;
+    width: 600px;
     margin: auto;
-    border: 1px solid black;
     height: 100%;
 }
 
 /* Basic six grid layout */
 .gridBoxes {
     display: grid;
-    grid-template: repeat(2, 300px) / repeat(3, 300px);
+    grid-template: repeat(2, 2fr) / repeat(3, 2fr);
     row-gap: 20px;
     column-gap: 20px;
-    border: 1px solid black;
-    justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    width: 95%;
+    width: 70%;
+    height: 50%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
+    justify-content: space-between;
 }
 
 /* To stylize the grid boxes inside the grid */
@@ -39,6 +38,8 @@
     border: 1px solid black;
     border-radius: 30px;
     display: flex;
+    width: 100%;
+    aspect-ratio: 1/1;
 }
 
 /* The content inside the grid boxes */
