@@ -10,11 +10,6 @@ body {
     color: #3B2E2B;
 }
 
-/* Sets elements within span to have this color */
-span {
-    color: #BC543B;
-}
-
 /* Main element for for the title sequence */
 .titleSeq {
     height: 50%;
