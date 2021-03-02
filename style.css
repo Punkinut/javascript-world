@@ -5,6 +5,16 @@
     box-sizing: border-box;
 }
 
+/* Sets all text to this default color */
+body {
+    color: #3B2E2B;
+}
+
+/* Sets elements within span to have this color */
+span {
+    color: #BC543B;
+}
+
 /* Main element for for the title sequence */
 .titleSeq {
     height: 50%;
@@ -30,6 +40,7 @@
 .titleSeq p {
     font-family: 'Rubik', sans-serif;
     padding: 15px;
+    opacity: 50%;
 }
 
 /* Basic six grid layout */
@@ -52,6 +63,13 @@
     display: flex;
     width: 100%;
     aspect-ratio: 1/1;
+    box-shadow: 10px 10px 20px #bc553b00;
+    transition: all 100ms ease-in-out;
+}
+
+.gridBoxes article:hover {
+    box-shadow: 5px 5px #3b2e2b2a;
+    background-color: white;
 }
 
 /* The content inside the grid boxes */
@@ -75,6 +93,32 @@ p {
     opacity: 50%;
     line-height: 20px;
 }
+
+@media screen and (max-width: 1100px) {
+    /* This is to change the grid at this screen width */
+    .gridBoxes {
+        grid-template: repeat(3, 1fr) / 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    /* This is to change the grid at this scren width */
+    .gridBoxes {
+        grid-template: repeat(6, 1fr) / 1fr;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /* Sets the size of the header text to a responsive size */
+    .titleSeq h2 {
+        font-size: 7vw;
+    }
+    .titleSeq p,
+    .gridBoxes p {
+        font-size: 4vw;
+    }
+}
+
 
 
 
