@@ -8,6 +8,7 @@
 /* Sets all text to this default color */
 body {
     color: #3B2E2B;
+    cursor: default;
 }
 
 /* Main element for for the title sequence */
@@ -70,10 +71,17 @@ body {
 /* The content inside the grid boxes */
 .gridBoxes aside {
     width: 85%;
+    height: 50%;
     margin: auto;
     padding-left: 10%;
     padding-right: 10%;
     font-family: 'Rubik', sans-serif;
+}
+
+aside img {
+    width: 28%;
+    image-rendering: crisp-edges;
+    
 }
 
 /* The padding to the text elements */
