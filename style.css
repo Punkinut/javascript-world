@@ -27,6 +27,17 @@ body {
     border-width: 12px;
 }
 
+/* This makes the checkbox bigger */
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  transform: scale(2);
+}
+
 /* This hides the real checkbox */
 .navIcon .noCheck {
     opacity: 100;
@@ -34,7 +45,7 @@ body {
     position: absolute;
     top: 35px;
     right: 35px;
-    z-index: 3;
+    z-index: 10;
     opacity: 0;
     transition: all 100ms ease-in-out;
 }
@@ -50,7 +61,7 @@ body {
     border-radius: 5px;
     border: 2px solid #3B2E2B;
     cursor: pointer;
-    z-index: 2;
+    z-index: 9;
     transition: all 150ms ease-in-out;
 }
 
@@ -60,8 +71,9 @@ body {
     height: 100%;
     background-color: rgb(216, 216, 216);
     position: absolute;
+    top: 20px;
     display: none;
-    z-index: 100;
+    z-index: 8;
     transition: all 100ms ease-in-out;
 }
 
