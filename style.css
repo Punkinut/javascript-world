@@ -5,10 +5,62 @@
     box-sizing: border-box;
 }
 
+/* Make mobile nav using pseudo classes and elements */
+/* Add the webpages and experiment with flexbox */
+/* Add more pseudo elements */
+
 /* Sets all text to this default color */
 body {
     color: #3B2E2B;
     cursor: default;
+}
+
+/* This is to position the nav icon elements in the corner of the page */
+/* .navIcon {
+    position: absolute;
+    top: 35px;
+    right: 40px;
+} */
+
+
+/* This hides the real checkbox */
+.navIcon .noCheck {
+    opacity: 100;
+    cursor: pointer;
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    z-index: 3;
+    opacity: 0;
+}
+
+/* This is the custom checkbox in the corner */
+.navIcon .checkbox-custom {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid black;
+    z-index: 2;
+}
+
+/* This is styling the content that appears */
+.navIcon .navBG {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(216, 216, 216);
+    position: absolute;
+    display: none;
+    z-index: 100;
+    transition: all 100ms ease-in-out;
+}
+
+/* When the checkbox is checked, the content is displayed */
+.navIcon .noCheck:checked + .navBG {
+    display: block;
 }
 
 /* Main element for for the title sequence */
@@ -51,6 +103,8 @@ body {
 }
 
 
+
+
 /* Styling the sub title of the page */
 .titleSeq p {
     font-family: 'Rubik', sans-serif;
@@ -68,7 +122,7 @@ body {
     height: 50%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 /* When the boxes are clicked on the opacity is set to 0 */
@@ -114,6 +168,7 @@ aside img {
 .gridBoxes h5,
 p {
     padding: 8px 0px;
+    position: relative;
 }
 
 /* Styling the paragraph elements inside the grid boxes */
@@ -145,7 +200,7 @@ p {
     .titleSeq p,
     .gridBoxes p {
         font-size: 4vw;
-    }
+    }  
 }
 
 
