@@ -23,6 +23,7 @@ body {
     width: 70%;
     margin: auto;
     height: 100%;
+    position: relative;
 }
 
 /* Styling the main header of the page */
@@ -30,7 +31,24 @@ body {
     font-family: 'Rubik Mono One', sans-serif;
     letter-spacing: 3px;
     font-size: 30px;
+    position: relative;
+    transition: all 100ms ease-in-out;
 }
+
+.colorText {
+    display: none;
+    color: #F8D279;
+    transition: all 100ms ease-in-out;
+}
+
+.titleSeq h2:hover + .colorText {
+    display: block;
+}
+
+.titleSeq h2:hover {
+    display: none;
+}
+
 
 /* Styling the sub title of the page */
 .titleSeq p {
