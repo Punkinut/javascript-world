@@ -22,6 +22,10 @@ body {
     right: 40px;
 } */
 
+/* Changes the style of the checkbox when hovered on */
+.navIcon:hover .checkbox-custom {
+    border-width: 12px;
+}
 
 /* This hides the real checkbox */
 .navIcon .noCheck {
@@ -32,6 +36,7 @@ body {
     right: 35px;
     z-index: 3;
     opacity: 0;
+    transition: all 100ms ease-in-out;
 }
 
 /* This is the custom checkbox in the corner */
@@ -43,8 +48,10 @@ body {
     width: 24px;
     background-color: transparent;
     border-radius: 5px;
-    border: 2px solid black;
+    border: 2px solid #3B2E2B;
+    cursor: pointer;
     z-index: 2;
+    transition: all 150ms ease-in-out;
 }
 
 /* This is styling the content that appears */
