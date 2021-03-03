@@ -35,6 +35,7 @@ body {
     transition: all 100ms ease-in-out;
 }
 
+/* Below is some pseudo code that switches the title color */
 .colorText {
     display: none;
     color: #F8D279;
@@ -70,8 +71,13 @@ body {
     margin-bottom: 50px;
 }
 
+/* When the boxes are clicked on the opacity is set to 0 */
+.boxNmate:active {
+    opacity: 0%;
+}
+
 /* To stylize the grid boxes inside the grid */
-.gridBoxes article {
+.gridBoxes a {
     background-color: rgba(0, 0, 0, 0.034);
     border-radius: 30px;
     display: flex;
@@ -79,9 +85,11 @@ body {
     aspect-ratio: 1/1;
     box-shadow: 10px 10px 20px #bc553b00;
     transition: all 100ms ease-in-out;
+    text-decoration: none;
+    color: #3B2E2B;
 }
 
-.gridBoxes article:hover {
+.gridBoxes a:hover {
     box-shadow: 5px 5px #3b2e2b2a;
     background-color: white;
 }
