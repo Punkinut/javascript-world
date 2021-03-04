@@ -68,8 +68,8 @@ input[type=checkbox]
 
 /* This is styling the content that appears */
 .navIcon .navBG {
-    width: 95%;
-    height: 100%;
+    width: 0;
+    height: 0;
     background-color: rgb(236, 236, 236);
     position: absolute;
     top: 35px;
@@ -77,15 +77,17 @@ input[type=checkbox]
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    display: none;
+    opacity: 0;
     z-index: 8;
     border-radius: 25px;
-    transition: all 100ms ease-in-out;
+    transition: opacity 100ms ease-in-out, width 1ms, height 1ms;
 }
 
 /* When the checkbox is checked, the content is displayed */
 .navIcon .noCheck:checked + .navBG {
-    display: block;
+    opacity: 100;
+    width: 95%;
+    height: 100%;
 }
 
 /* Changes the position of the fake checkbox when clicked */
