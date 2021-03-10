@@ -1,26 +1,13 @@
-/* Just to set some basics for the overall page */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 /* Make mobile nav using pseudo classes and elements */
 /* Add the webpages and experiment with flexbox */
-/* Add more pseudo elements */
 
 /* Sets all text to this default color */
 body {
     color: #3B2E2B;
     cursor: default;
 }
-
-/* This is to position the nav icon elements in the corner of the page */
-/* .navIcon {
-    position: absolute;
-    top: 35px;
-    right: 40px;
-} */
 
 /* Changes the style of the checkbox when hovered on */
 .navIcon:hover .checkbox-custom {
@@ -140,9 +127,6 @@ input[type=checkbox]
 .titleSeq h2:hover {
     display: none;
 }
-
-
-
 
 /* Styling the sub title of the page */
 .titleSeq p {
