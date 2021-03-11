@@ -1,12 +1,12 @@
 
-
-/* Make mobile nav using pseudo classes and elements */
-/* Add the webpages and experiment with flexbox */
-
 /* Sets all text to this default color */
 body {
     color: #3B2E2B;
     cursor: default;
+}
+
+header {
+    height: 800px;
 }
 
 /* Changes the style of the checkbox when hovered on */
@@ -91,7 +91,7 @@ input[type=checkbox]
 
 /* Main element for for the title sequence */
 .titleSeq {
-    height: 50%;
+    height: 180px;
 }
 
 /* The container that holds the text inside the title sequence */
@@ -142,7 +142,8 @@ input[type=checkbox]
     row-gap: 20px;
     column-gap: 20px;
     width: 80%;
-    height: 50%;
+    height: 80%;
+    margin-top: none;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 50px;
@@ -159,7 +160,6 @@ input[type=checkbox]
     border-radius: 30px;
     display: flex;
     width: 100%;
-    aspect-ratio: 1/1;
     box-shadow: 10px 10px 20px #bc553b00;
     transition: all 100ms ease-in-out;
     text-decoration: none;
@@ -202,6 +202,11 @@ p {
 }
 
 @media screen and (max-width: 1100px) {
+
+    header {
+        height: 1200px;
+    }
+
     /* This is to change the grid at this screen width */
     .gridBoxes {
         grid-template: repeat(3, 1fr) / 1fr 1fr;
@@ -209,8 +214,15 @@ p {
 }
 
 @media screen and (max-width: 730px) {
+
+    header {
+        height: 2800px;
+    }
+
     /* This is to change the grid at this scren width */
     .gridBoxes {
+        margin-top: 100px;
+        height: 90%;
         grid-template: repeat(6, 1fr) / 1fr;
     }
 
@@ -228,6 +240,14 @@ p {
 }
 
 @media screen and (max-width: 400px) {
+
+    header {
+        height: 2000px;
+    }
+
+    .gridBoxes {
+        height: 85%;
+    }
     /* Sets the size of the header text to a responsive size */
     .titleSeq h2 {
         font-size: 7vw;
