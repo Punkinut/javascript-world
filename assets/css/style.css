@@ -9,6 +9,11 @@ header {
     height: 800px;
 }
 
+/* To make the Icon invisible at desktop view */
+.navIcon {
+    display: none;
+}
+
 /* Changes the style of the checkbox when hovered on */
 .navIcon:hover .checkbox-custom {
     border-width: 12px;
@@ -215,6 +220,10 @@ p {
 
 @media screen and (max-width: 730px) {
 
+    .navIcon {
+        display: block;
+    }
+
     header {
         height: 2800px;
     }
@@ -227,16 +236,16 @@ p {
     }
 
     /* Changes the position of the fake checkbox when clicked */
-.navIcon .noCheck:checked ~ .checkbox-custom {
-    top: 60px;
-    right: 50px;
-}
+    .navIcon .noCheck:checked ~ .checkbox-custom {
+        top: 60px;
+        right: 40px;
+    }
 
-/* Changes the position of the real checkbox when clicked */
-.navIcon .noCheck:checked {
-    top: 65px;
-    right: 55px;
-}
+    /* Changes the position of the real checkbox when clicked */
+    .navIcon .noCheck:checked {
+        top: 65px;
+        right: 45px;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -258,16 +267,16 @@ p {
     }
     
     /* Changes the position of the fake checkbox when clicked */
-.navIcon .noCheck:checked ~ .checkbox-custom {
-    top: 60px;
-    right: 40px;
-}
+    .navIcon .noCheck:checked ~ .checkbox-custom {
+        top: 60px;
+        right: 35px;
+    }
 
-/* Changes the position of the real checkbox when clicked */
-.navIcon .noCheck:checked {
-    top: 65px;
-    right: 45px;
-}
+    /* Changes the position of the real checkbox when clicked */
+    .navIcon .noCheck:checked {
+        top: 65px;
+        right: 40px;
+    }
 }
 
 
